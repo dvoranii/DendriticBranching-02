@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dendritic Branching Pattern</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="canvas-wrapper">
+        <canvas
+          id="dendriticCanvas"
+          width="800"
+          height="700"
+          style="border: 1px solid black"
+        ></canvas>
+      </div>
+
+      <div class="form-wrapper">
+        <form class="branch-form">
+          <div class="input-wrapper-outer">
+            <div class="input-wrapper-1">
+              <input
+                placeholder="Minimum branches"
+                name="minBranch"
+                class="min-branches"
+              />
+              <label class="minBranch-label" for="minBranch"
+                >Only values 0, 1 and 2 are valid here</label
+              >
+            </div>
+            <div class="input-wrapper-2">
+              <input
+                name="maxBranch"
+                placeholder="Maximum branches"
+                class="max-branches"
+              />
+              <label class="maxBranch-label" for="maxbranch"
+                >Please use a number between 3 and 10 (max)</label
+              >
+            </div>
+          </div>
+
+          <button class="new-branch__btn">New Branch</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
